@@ -5,4 +5,4 @@ if [ -z "$1" ]
     echo "No argument supplied. Pass the commit message to be evaluated as an argument"
 fi
 
-echo $1 | commitlint
+echo "$@" | commitlint
